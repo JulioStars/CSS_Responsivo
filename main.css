@@ -134,7 +134,7 @@ button {
     margin-top: 40px;
 }
 
-                         /* Celular */
+                                    /* Celular */
 
 @media screen and (max-width: 767px) {
     * {
@@ -222,7 +222,7 @@ button {
 
 }
 
-                    /* Tablet */
+                                    /* Tablet */
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     header {
@@ -319,7 +319,7 @@ button {
     }
 }
 
-                           /* Tablet na horizontal */
+                                    /* Tablet na horizontal */
 
 @media screen and (max-width: 1180px) and (orientation: landscape) {
     header {
