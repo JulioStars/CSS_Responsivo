@@ -1,0 +1,357 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Roboto, sans-serif;
+}
+
+body {
+    background-color: #001c55;
+}
+
+header {
+    background-color: #023e7d;
+    color: white;
+    padding: 20px 0;
+}
+
+header nav li {
+    display: inline;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+header nav li a {
+    color: white;
+    text-decoration: none;
+}
+
+header .container,
+#sobre .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+
+#sobre .container {
+    align-items: flex-start;
+}
+
+#sobre {
+    padding: 40px 0;
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.dentro-loja {
+    margin-right: 32px;
+    height: 500px;
+}
+
+
+#sobre h2,
+#produtos h2 {
+    margin-bottom: 30px;
+    border-bottom: 3px solid white;
+    padding-bottom: 10px;
+    color: #ffd500;
+}
+
+p {
+    color: #ffd500;
+}
+
+h3 {
+    color: white;
+}
+
+.produto {
+    display: flex;
+}
+
+
+
+.container-flex {
+    display: flex;
+}
+
+.container-flex li {
+    list-style: none;
+}
+
+#produtos-1, #produtos-2 {
+    width: 250px;
+    display: flex;
+}
+
+.container-flex img {
+    height: 220px;
+    width: 310px;
+}
+
+#produtos-2 {
+    margin-left: 390px;
+}
+
+.container-flex {
+    width: 500px;
+}
+
+#linha-1,#linha-2,#linha-3 {
+    margin-right: 13px;
+}
+
+.container-flex h3 {
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 8px 0px;
+    margin-bottom: 20px;
+    border-radius: 6px;
+    border: none;
+    background-color: #023e7d;
+    color: white;
+    font-size: 15px;
+    display: block;
+    width: 100%;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#linha-2 button, #linha-3 button {
+    margin-top: 20px;
+}
+
+#linha-4 button {
+    margin-top: 40px;
+}
+
+                         /* Celular */
+
+@media screen and (max-width: 767px) {
+    * {
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    header {
+        background-color: #023e7d;
+        color: white;
+        width: 1500px;
+        padding: 100px 0;
+        font-size: 2em;
+        }
+
+        header h1 {
+            font-size: 3em;
+            margin-left: 6%;
+        }
+
+        header nav li a {
+            font-size: 3em;
+        }
+
+        #sobre .container, #produtos .container {
+            margin-left: 50%;
+        }
+
+        #sobre .container {
+            display: block;
+        }
+
+        #sobre .container img {
+            width: 1100px;
+            height: 1000px;
+            margin-top: 100px;
+            margin-bottom: 70px;
+        }
+
+        .about-store {
+            width: 1100px;
+            margin-bottom: 100px;
+        }
+
+        .about-store p {
+            font-size: 3em;
+        }
+
+        h2 {
+            font-size: 4em;
+            width: 1100px;
+        }
+
+        .container-flex {
+            display: block;
+            width: 1100px;
+        }
+
+        
+        .container-flex img {
+            width: 1100px;
+            height: 1000px;
+            margin-top: 100px;
+        }
+
+        h3 {
+            margin: 0;
+            font-size: 4em;
+        }
+
+        .container-flex p {
+            font-size: 3em;
+            margin: 40px 0;
+        }
+
+        button {
+            padding: 40px 0;
+            font-size: 50px;
+        }
+
+        #linha-4 button {
+            margin-bottom: 100px;
+        }
+
+}
+
+                    /* Tablet */
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    header {
+        width: 1280px;
+        padding: 30px 120px;
+        font-size: 20px;
+    }
+
+    header h1 {
+        font-size: 3em;
+    }
+
+    header nav li a {
+        font-size: 2em;
+    }
+
+    #sobre .container, #produtos .container {
+        margin-left: 14%;
+    }
+
+    #sobre .container {
+        display: block;
+    }
+
+    #sobre .container img {
+        width: 1050px;
+        height: 800px;
+        margin-top: 50px;
+        margin-bottom: 70px;
+    }
+
+    .about-store {
+        width: 1050px;
+        margin-bottom: 50px;
+    }
+
+    .about-store p {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 4em;
+        width: 1050px;
+    }
+
+    .container-flex {
+        display: grid;
+        grid-template-columns: repeat(2, 100%);
+        column-gap: 7%;
+    }
+
+    .container-flex img {
+        width: 515px;
+        height: 500px;
+        margin-top: 30px;
+    }
+
+    h3 {
+        margin: 0;
+        font-size: 4em;
+    }
+
+    #linha-1,#linha-2,#linha-3,#linha-4 {
+        width: 515px;
+        margin: 0;
+    }
+
+    .container-flex p {
+        font-size: 34px;
+        margin: 40px 0;
+        width: 470px;
+    }
+
+    button {
+        padding: 20px 0;
+        font-size: 30px;
+    }
+
+    #linha-1 button {
+        margin-top: 20px;
+    }
+
+    #linha-2 button {
+        margin-top: 60px;
+    }
+
+
+    #linha-3 button {
+        margin-top: 30px;
+    }
+
+    #linha-4 button {
+        margin-top: 70px;
+    }
+}
+
+                           /* Tablet na horizontal */
+
+@media screen and (max-width: 1180px) and (orientation: landscape) {
+    header {
+        width: 1360px;
+        align-items: center;
+        padding: 25px 80px;
+    }
+
+    #sobre .container,
+    #produtos .container {
+        margin-left: 80px;
+        width: 1180px;
+    }
+
+    .container-flex img {
+        width: 285px;
+    }
+
+    #linha-1 button {
+        margin-top: 22px;
+    }
+
+    #linha-2 button {
+        margin-top: 41px;
+    }
+
+    #linha-3 button {
+        margin-top: 42px;
+    }
+
+    #linha-4 button {
+        margin-top: 42px;
+    }
+
+}
